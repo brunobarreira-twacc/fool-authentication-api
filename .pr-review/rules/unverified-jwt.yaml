@@ -1,0 +1,7 @@
+rules:
+  - id: scanbridge.auth.unverified-jwt
+    message: Decoding a JWT does not verify its signature or authenticity.
+    severity: ERROR
+    languages:
+      - typescript
+    pattern: jwt.decode($TOKEN)

@@ -1,0 +1,11 @@
+node_modules/
+dist/
+data/
+.env
+*.sqlite
+*.sqlite-journal
+.scanbridge/
+data
+deterministic-pr-review
+.scanbridge
+INITIAL_PROMPT_SDD

@@ -1,0 +1,7 @@
+rules:
+  - id: scanbridge.database.interpolated-sql
+    message: User-controlled data must not be interpolated into a SQL query.
+    severity: ERROR
+    languages:
+      - typescript
+    pattern: db.prepare(`SELECT * FROM users WHERE email = '${email}'`)

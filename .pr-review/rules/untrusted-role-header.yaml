@@ -1,0 +1,7 @@
+rules:
+  - id: scanbridge.auth.untrusted-role-header
+    message: Authorization must not trust the client-controlled x-role header.
+    severity: ERROR
+    languages:
+      - typescript
+    pattern: $REQ.headers['x-role']

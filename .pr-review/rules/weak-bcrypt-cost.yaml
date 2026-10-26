@@ -1,0 +1,7 @@
+rules:
+  - id: scanbridge.crypto.weak-bcrypt-cost
+    message: Bcrypt cost 4 is insufficient for password hashing.
+    severity: WARNING
+    languages:
+      - typescript
+    pattern: bcrypt.hashSync($PASSWORD, 4)
